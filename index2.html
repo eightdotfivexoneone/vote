@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Are you old enough to vote?</title>
+</head>
+<body>
+    <h1>Are you old enough to vote?</h1>
+    <p>
+      Input your age and click the button:
+      <input id="age" value="18" />
+      <button onclick="myFunction()">Try it</button>
+     </p>
+
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+        var age, voteable;
+        age = document.getElementById("age").value;
+        voteable = (age < 18) ? "Too young":"Old enough";
+        document.getElementById("demo").innerHTML = voteable + " to vote.";
+    }
+    </script>
+    
+    </body> 
+</html>

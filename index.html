@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,500,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Are you old enough to vote?</title>
+</head>
+
+<body>
+
+  <h1>Are you old enough to vote?</h1> 
+
+    <p>
+      Input your age and click the button.
+      <br>
+        <input id="age" value="18" />
+      <br>
+      <button onClick="myFunction()">Find Out!</button>
+
+    </p>
+
+
+     <p id="demo"></p>
+
+
+    <p class="reference">Reference: <a href="https://www.w3schools.com/js/js_comparisons.asp" target="_blank">Comparison Operators</p></a>
+
+    <!-- <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>  -->
+
+
+  <script>
+    
+    function myFunction() {
+      var age, votable;
+      age = document.getElementById("age").value;
+      votable = (age < 18) ? "Too young":"Old enough";
+      document.getElementById("demo").innerHTML = votable + " to vote!";
+
+    }
+  
+  </script>
+
+</body>
+</html>
